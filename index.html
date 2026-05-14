@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <!-- Load Google Maps JS API -->
+      <script
+         async
+         defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD14j4R8fZXgRsFTLb-Q18ZrhLV6OlGxEU&libraries=geometry&callback=initMap&loading=async"
+         ></script>
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+   </head>
+   <body>
+      <div id="container">
+         <div id="left-panel">
+            <h1>CSUN Map Quiz</h1>
+            <div id="question-box">
+               <h2>
+                  Location <span id="location-number">1</span>
+                  of
+                  <span id="location-total">5</span>
+               </h2>
+               <p id="location-prompt">
+                  Double-click on the map where you think the CSUN Bookstore is.
+               </p>
+            </div>
+            <div id="message-box"></div>
+            <div id="score-box">
+               <p>Correct: <span id="score-correct">0</span></p>
+               <p>Incorrect: <span id="score-incorrect">0</span></p>
+               <p> tries remaining:<span id="tries-count">3</span></p>
+            </div>
+            <button id="next-button" disabled>
+            Next Location
+            </button>
+            <button id="restartBtn">
+            Restart 
+            </button>
+         </div>
+         <div id="map"></div>
+      </div>
+   </body>
+</html>
+
